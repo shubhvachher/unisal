@@ -1,0 +1,10 @@
+You can run the file both as a video in "DH1.." and as image in "SALICON" and see the difference.
+    To help the video run on different sized GPUs change frames_modulo in generate_predictions_from_path in train.py
+
+You can make a new function that doesn't do all the additional stuff that is being done by the function that processes both video and image together and see the runtime difference.
+
+Mid term presentation processing
+    GPU is at 0 percent usage while running
+    ffmpeg extraction can be speeded up with python script that uses https://stackoverflow.com/questions/10957412/fastest-way-to-extract-frames-using-ffmpeg
+	
+	

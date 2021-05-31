@@ -875,7 +875,8 @@ class Trainer(utils.KwConfigClass):
 
         with torch.no_grad():
             if is_video:
-                frame_modulo = 5 if source == 'DHF1K' else 4
+                # frame_modulo = 5 if source == 'DHF1K' else 4
+                frame_modulo = 15
                 dataset = data.FolderVideoDataset(
                     images_path, source=source, frame_modulo=frame_modulo)
                 pred_dir = folder_path / 'saliency'
